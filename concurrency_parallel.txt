@@ -1,0 +1,27 @@
+
+/*
+parallel programing adalah memecahkan suatu masalah dengan cara membaginya menjadi
+yang lebih kecil. dan dijalankan secara bersamaan pada waktu yg bersamaan pula,
+
+perbedaan parallel dg concurrency
+
+1. concurrency adalah menjalankan beberapa pekerjaan secara bergantian
+2. parallel biasanya membutuhkan banyak thread, sedangkan concurrency, kita hanya membutuhkan  sedikit thread
+
+
+
+CPU-BOUND
+banyak algorithm yang dibuat hanya membutuhkan CPU untuk menjalankannya.
+algorithm ini biasanya sangat tergantung dengan kecepatan CPU.
+Contohnya yg paling populer adalah machine learning, oleh karena itu sekarang banyak sekali teknologi machine learning
+yg menggunakan GPU karena memiliki banyak core dari pada CPU jenis bahasanya contohnya (python,java)
+dan jenis software berbasis CPU-BOUND ini tidak ada untungnya ketika menggunakan concurrency programing.
+
+
+IO-BOUND
+sebagai software enginer biasanya kebanyakan app yg kita buat adalah berbasi IO-BOUND
+dimana aplikasi sangat tergantung dengan kecepatan input dan output devices yang digunakan
+aplikasi jenis IO-BOUND walaupun bisa terbantu dengan parallel programing, tetapi benefitnya sangat sedikit
+jika dibandingkan dengan menggunakan concurrency programing.
+contohnya jika kita ingin membaca select data dari database jika bahasa pemograman yg berbasi thread dia akan menunggu selama 1 detik
+untuk membaca data dari database, padahal 1 detik itu jika menggunakan concurrency programing bisa digunakan untuk melakukan hal lain lagi */

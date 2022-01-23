@@ -1,0 +1,22 @@
+
+
+
+go routines adalah sebuah theread ringan yg dikelola oleh go runtime
+ukuran go routines sangat kecil, sekitar 2kb, jauh lebih kecil dari thread yang bisa sampai 1mb
+namum tidak seperti thread yg berjalan parallel, go routines bisa berjalan secara concurrent
+
+
+CARA KERJA go routines
+
+go routines dijalan oleh go scheduler dalam thread, dimana jumlah threadnya sebanyak GOMAXPROCS(sejumlah core CPU) 
+jadi sebenarnya go routines tidak bisa dibilang sebagai pengganti thread, karena go routines berjalan diatas thread
+namun yg memudahkan kita adalah kita tidak perlu melakukan manajement thread secara manual, karena sudah diatur oleh go scheduler
+
+
+cara kerja go scheduler
+
+dalam go scheduler ada beberap terminology 
+1.G = Goroutines
+2.M = machine(thread)
+3.P = processor
+
