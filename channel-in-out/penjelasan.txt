@@ -1,0 +1,6 @@
+channel in & out
+
+
+saat kita mengirim channel sebagai parameter, isi function tersebut bisa mengirim dan menerima data dari channel tersebut
+kadang kita ingin memberi tahu terhadap function. misal bahwa channel tersebut hanya bisa digunakan untuk mengirim data.atau sebaliknya.
+hal ini bisa dilakukan di parameter dengan cara menandai apakah channel ini digunakan untuk IN=(mengirim) / OUT=(menerima)
