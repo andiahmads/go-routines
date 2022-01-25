@@ -1,0 +1,6 @@
+===========================channel sebagai parameter=====================================
+
+dalam kasus asli biasanya kita akan mengirim channel ke function lain dengan menggunakan parameter
+dan defaultnya parameter adalah pass by value, yaitu, ketika mengirim data paramter biasanya value yang dikirim akan diduplicat
+sehingga ketika kita ingin mengirim data asli, kita harus menggunakan pointer(pas by  reference)
+berbeda dengan channel, kita tidak perlu melakukan hal tersebut(pointer)
