@@ -1,0 +1,32 @@
+=================APA ITU CHANNEL ?===============================================================================
+channel adalah tempat komunikasi secara synchronous yang bisa dilakukan oleh goroutines
+didalam channel terdapat pengirim dan penerima, biasanya pengirim dan penerima adalah go routines yg berbeda
+saat melakukan pengiriman data ke channel, go routines akan ter-block, sampai ada yang menerima data tersebut   
+maka dari itu, channel disebut sebagai alat komunikasi synchronous(blocking)
+channel cocok sekali sebagai alternatif seperti mekanisme asyn dan await yg terdapat dibeberapa bahasa pemograman   
+==================================================================================================================
+
+
+
+==========karakteristik dari channel============== 
+
+secara default channel hanya bisa menampung satu data, jika kita ingin menambahkan data lagi,
+harus menunggu data yg ada dichannel diambil.
+channel hanya bisa menerima 1 jenis data.
+channel bisa diambil dari lebih satu jenis go routines
+channel harus di close jika tidak digunakan, atau bisa menyebabkan memory leak.
+===================================================
+
+
+======================MEMBUAT CHANNEL===================================================================
+Channel di go direpresentasikan dengan tipe data chan.
+untuk membuat channel sangat mudah, kita bisa menggunakan method Make(), mirip ketika membuat map
+Namun saat pembuatan channel, kita harus tentukan tipe data yang bisa dimasukkan kedalam channel tersebut
+=========================================================================================================
+
+
+
+Mengirim dan menerima data dari channel
+untuk mengirim data, kita bisa gunakan kode (channel <- data)
+untuk menerima data, kita bisa gunakan kode (data <-channel)
+jika selesai, jangan lupa untuk menutup channel menggunakan method close()
