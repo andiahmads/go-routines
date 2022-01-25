@@ -1,0 +1,7 @@
+======================================RANGE CHANNEL===================================================
+terkadang ada case sebuah channel dikirim data secara terus menerus oleh penggirim
+dan kita tidak tau kapan channel tersebut akan berhenti mengirim data
+salah satu yang bisa kita lakukan adalah dengan menggunakan perulangan range ketika menerima data dari channel.
+ketika sebuah channel di close(), maka secara otomatis perulangan tersebut akan berhenti.
+ini lebih sederhana dari pada kita melakukan pengecekan channel secara manual.
+==============================================================================================================
