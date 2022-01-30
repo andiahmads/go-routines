@@ -1,0 +1,8 @@
+==============================================Default Select==================================================
+apa yang terjadi ketika melakukan select data terhadap channel yang tidak ada datanya.?
+maka kita akan menunggu sampai data itu ada.
+kadang kita ingin melakukan sesuatu jika misal semua channle tidak ada datanya ketika kita melakukan select channel.
+dalam select, kita bisa menambahkan fitur default, dimana fitur ini akan dieksekusi jika memang disemua channel yang
+kita select tidak ada datanya.
+==================================================================================================================
+
