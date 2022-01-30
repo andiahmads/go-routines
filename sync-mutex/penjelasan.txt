@@ -1,0 +1,8 @@
+=========================================Sync Mutex=======================================================
+untuk mengatasi masalah rest condition, digolang terdapat sebuah struct bernama sync.mutex.
+mutex bisa digunakan untuk melakukan locking dan unlocking, dimana ketika melakukan locking terdapat mutex,
+maka tidak ada yang bisa melakukan locking lagi sampai kita melakukan unlocking.
+jika terdapat beberap go routines melakukan lock terhadap mutex, maka hanya 1 goroutines yg diperbolehkan,
+setelah goroutines tersebut melakukan unlocking, baru goroutines selanjutnya diperbolehkan melakukan lock lagi.
+ini sebagai solusi terbaik ketika ada masalah rest condition.
+=============================================================================================================
