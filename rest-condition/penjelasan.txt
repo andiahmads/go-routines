@@ -1,0 +1,7 @@
+=====================MASALAH DENGAN GO ROUTINES=====================================================
+saat menggunakan  go routines, dia tidak hanya berjalan secara concurrency, tapi bisa juga parallel.
+hal ini sangat berbahaya ketika melakukan manipulasi data variabel yang sama oleh beberapa go routines secara bersamaan.
+hal ini bisa menyebabkan masalah yang namanya RACE CONDITION.
+
+
+
