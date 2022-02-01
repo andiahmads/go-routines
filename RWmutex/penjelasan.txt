@@ -1,0 +1,4 @@
+kadang ada case dimana kita ingin melakukan locking bukan hanya pada proses mengubah data, tetapi juga saat membaca data.
+kita sebenarnya bisa menggunakan MUTEX, namun masalahnya nanti akan rebutan antara proses membaca dan mengubah.
+di Go lang telah disediakan struct RWMutex(Read write Mutex) untuk menangani hal ini, dimana Mutex jenis ini memliki dua lock.
+lock untuk read & lock untuk write.
