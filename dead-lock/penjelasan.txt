@@ -1,0 +1,3 @@
+ketika membuat aplikasi yg parallel atau concurrency, masalah yg sering terjadi adalah Deadlock.
+Deadlock adalah keadaan dimana sebuah proses go routines saling menunggu lock sehingga tidak ada satupun goroutines yg bisa jalan.
+
