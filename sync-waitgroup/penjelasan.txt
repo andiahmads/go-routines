@@ -1,0 +1,7 @@
+waitgroup adalah fitur yang bisa digunakan untuk menunggu sebuah proses selesai dilakukan.
+hal ini kadang diperlukan, contoh kasus kita ingin menjalankan beberapa proses menggunakan goroutines,
+tetapi kita ingin proses selesai terlebih dahulu sebelum aplikasi kita selesai.
+case seperti ini bisa diatasi dengan menggunakan waitgroup.
+untuk menandai bahwa ada proses goroutines,kita bisa menggunakan method Add(int), setelah proses goroutines selesai,
+kita bisa menggunakan method Done().
+untuk menunggu semua proses selesai, kita bisa menggunakan method Wait().
